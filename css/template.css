@@ -929,6 +929,27 @@ header.site-header {
   display: block;
 }
 
+.lang {
+  color: white !important;
+  font-size: 13px;
+}
+
+.lang:hover {
+  color: #fd3c3d !important;
+  font-size: 13px;
+}
+
+.lang-en {
+  color: inherit;
+  display: inline;
+  margin-right: 0 !important;
+}
+
+.lang-fr {
+  display: inline;
+  margin: 0 !important;
+}
+
 @media screen and (min-width: 768px) {
   .site-top-bar .site-top-bar-right-section a:last-child {
     margin-right: 0;
@@ -937,9 +958,19 @@ header.site-header {
 
 @media screen and (max-width: 767px) {
   .site-top-bar .site-top-bar-right-section {
-    text-align: left;
-    display: inline-block;
+    text-align: right;
     float: none;
+  }
+  .site-top-container {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    margin: 0 !important;
+  }
+
+  .lang {
+    margin-bottom: 5px;
   }
 }
 
@@ -1116,7 +1147,8 @@ header.site-header {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 0;
+    margin-top: -30px;
   }
 }
 
@@ -1471,9 +1503,9 @@ header.site-header {
 @media screen and (max-width: 767px) {
   .site-main-slider .seq-prev,
   .site-main-slider .seq-next {
-    margin-top: 20px;
+    /* margin-top: 20px;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 20px; */
   }
 }
 
@@ -1768,7 +1800,6 @@ header.site-header {
   position: relative;
   min-height: 170px;
 }
-
 
 .top-servic-box figure {
   float: left;
@@ -2717,8 +2748,8 @@ Site Offer (section)
   text-transform: uppercase;
 }
 
-.site-trainers .trainer-box .trainer-box-content{
-    width: 100%;
+.site-trainers .trainer-box .trainer-box-content {
+  width: 100%;
 }
 
 .site-trainers .trainer-box .trainer-box-content p {
